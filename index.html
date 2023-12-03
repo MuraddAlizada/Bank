@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yelo Bank</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header class="bg text-white text-center py-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://yelobankpayment.3dsecure.az/public/img/yelobank-logo.png"
+                alt="Yelo Bank"
+                width="150"
+                class="img-fluid"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Deposits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cashbacks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Card Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Money Transfers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Online Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Individuals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Bank</a>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="#"><img width="15" height="15" src="https://www.svgrepo.com/show/127575/location-sign.svg"/>ATM’s and branches</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div
+      class=" bg d-flex justify-content-center align-items-center p-5"
+    >
+    <img class="" width="500px" src="https://yelobankpayment.3dsecure.az/public/img/yelobank-logo.png" />
+
+    </div>
+
+   
+    <main class="container p-5">
+         <h1 class="operations p-4 d-flex justify-content-center">Card Operations:</h1>
+
+      <input
+        id="moneyAmount"
+        class="form-control form-control-lg"
+        type="number"
+        placeholder="Please write amount:"
+      />
+      <div class="mt-5 d-flex justify-content-center">
+        <div class="btn-group mx-auto" role="group" aria-label="Basic example">
+          <button type="button" id="depositBtn" class="btn btn-warning btn-lg">
+            Deposit
+          </button>
+          <button type="button" id="withdrawBtn" class="btn btn-warning btn-lg">
+            Withdraw
+          </button>
+        </div> 
+      </div>
+      <div class="p-4 d-flex justify-content-center">
+        <h3 class="text-black">Your Balance: <span id="moneyBalance">0</span></h3>
+    </div>
+      
+      <table class="table table-striped border my-5">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Payment Type</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        
+        <tbody id="list">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Cash</td>
+            <td class="text-success">+100</td>
+            <td>12.11.2023</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </main>
+
+</head>
+<body>
+    <div class="currency-container">
+        <h1 class="currency">Currency:</h1>
+        <table class="currency-table">
+            <tr>
+                <th></th>
+                <th>Buy</th>
+                <th>Sale</th>
+                <th>CBAR</th>
+            </tr>
+            <tr>
+                <td>USD</td>
+                <td>1.6900</td>
+                <td>1.7000</td>
+                <td>1.7000</td>
+            </tr>
+            <tr>
+                <td>EUR</td>
+                <td>1.8350</td>
+                <td>1.8600</td>
+                <td>1.8544</td>
+            </tr>
+            <tr>
+                <td>RUB*</td>
+                <td>0.0188</td>
+                <td>0.0200</td>
+                <td>0.0191</td>
+            </tr>
+            <tr>
+                <td>GBP</td>
+                <td>2.0700</td>
+                <td>2.2200</td>
+                <td>2.1489</td>
+            </tr>
+        </table>
+    </div>
+    <div class="news">
+        <h1>Latest news:</h1>
+    </div>
+    <div class="news-container justify-content-between">
+  
+        <div class="news-card">
+            <h2>Yelo Bank artıq Masallıda!</h2>
+            <p>Learn more</p>
+            <p>29 November 2023</p>
+        </div>
+
+        <div class="news-card">
+            <h2>Yelo Bank-ın “Yelaw Boot Camp” proqramının iştirakçıları seçildi</h2>
+            <p>Learn more</p>
+            <p>27 November 2023</p>
+        </div>
+
+        <div class="news-card">
+            <h2>Yelo Bank-da Ümummilli liderə həsr olunmuş konsert keçirilib</h2>
+            <p>Learn more</p>
+            <p>24 November 2023</p>
+        </div>
+        <a href="#" class="btn-see-more">See more</a>
+    </div>
+    
+  </body>
+  <footer class="bg d-flex justify-content-center">
+    <div class="bg d-flex flex-column align-items-center p-5">
+        <img class="mb-3" width="200px" src="https://yelobankpayment.3dsecure.az/public/img/yelobank-logo.png" />
+        <p class="text-center">
+            © 2023 Yelo Bank | License № 203 issued by CB AR on February 25, 1994 <br>
+            Find us:
+            <img width="15" height="15" src="https://www.svgrepo.com/show/127575/location-sign.svg"/>Zardabi 81k, Baku, Azerbaijan <br>
+            Contact number:<img width="15" height="15" src="https://svgsilh.com/svg/304080.svg"/>981 <br>
+            Write us: <a href="mailto:bank@yelo.az">bank@yelo.az</a><br>
+            Follow us on:
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png" alt="Facebook" width="20px" height="20px">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="Twitter" width="20px" height="20px">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://pngbuy.com/wp-content/uploads/2023/06/Instagram-PNGinstagram-icon-png.png" alt="Instagram" width="20px" height="20px">
+            </a>
+            
+        </p>
+    </div>
+</footer>
+
+<style>
+
+    .bg {   
+        background-color: rgb(255, 204, 0);
+    }
+
+        .currency-table {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .currency-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .currency-table th, .currency-table td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .currency-table th {
+            background-color: #f2f2f2;
+        }
+        .operations , .news , .currency {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .news-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            gap: 30px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .news-card {
+            flex: 1 1 calc(33.33% - 20px);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+
+        .btn-see-more {
+            display: block;
+            width:140px;
+            border: #3498db;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-color: #3498db;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+<script src="./jb.js"></script>
+</html>
