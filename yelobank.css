@@ -1,0 +1,106 @@
+.bg {   
+    background-color: rgb(255, 204, 0);
+}
+
+    .currency-table {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .currency-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .currency-table th, .currency-table td {
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .currency-table th {
+        background-color: #f2f2f2;
+    }
+    .operations , .news , .currency {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .news-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        gap: 30px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news-card {
+        flex: 1 1 calc(33.33% - 20px);
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+
+    .btn-see-more {
+        display: block;
+        width:140px;
+        border: #3498db;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-color: #3498db;
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        width: 400px;
+        height: 550px;
+        margin-right: 20px;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      .card img {
+        width: 120px;
+        height: 200px;
+      }
+      
+      .order-btn {
+        background-color: rgb(255, 204, 0);;
+        color: #000;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+      }
+      
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+    
+    
+   
